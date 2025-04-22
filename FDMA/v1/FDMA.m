@@ -12,13 +12,11 @@ t = 0:1/fs:1;        % Time vector for 1 second duration
 
 %% Generate Baseband Signals for 3 Users
 % These signals represent the data each user wants to send.
-% For simplicity, we use sinusoidal signals as placeholders.
 
 user1 = sin(2*pi*100*t);   % User 1 baseband signal (100 Hz)
 user2 = sin(2*pi*200*t);   % User 2 baseband signal (200 Hz)
 user3 = sin(2*pi*300*t);   % User 3 baseband signal (300 Hz)
 
-% You can replace these sinusoids with actual data, e.g., audio samples or binary data.
 
 %% Assign Carrier Frequencies to Each User
 % In FDMA, each user gets a unique carrier frequency to modulate their signal.
